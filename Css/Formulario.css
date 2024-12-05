@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+    background: linear-gradient(-45deg, #ff5a21, #ff9021,#f8da52);
+    background-size: 400% 400%;
+	width: 100vw;
+    height: 100vh;
+	animation: gradient 15s ease infinite; /* Animación del degradado */
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    display: flex; /* Permite centrar el contenido */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    min-height: 100vh; /* Asegura que el body ocupe toda la altura del viewport */
+    margin: 0; /* Elimina márgenes por defecto */
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+h1 {
+    text-align: center; /* Centra el texto */
+    color: #FFFFFF;
+	font-size: 200%;
+	padding-right: 10px;
+    padding-bottom: 10px; /* Añade espacio debajo del título */
+    margin-bottom: 20px;
+	margin-right: -30%;
+	margin-left: 20%;/* Espacio entre el título y el formulario */
+}
+
+form {
+    max-width: 2000px; /* Aumenta el ancho máximo del formulario */
+    margin: 5px auto; /* Añade margen superior al formulario */
+    background-color: transparent; /* Fondo transparente */
+}
+
+label {
+    display: block; /* Asegura que cada etiqueta esté en su propia línea */
+    margin-bottom: 5px; /* Espaciado entre la etiqueta y el campo */
+    font-weight: bold;
+    color: #fff; /* Color de texto blanco */
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"]{
+    width: 100%; /* Mantiene el ancho completo */
+	height: 10%;
+    padding-left: 100%; /* Aumenta el padding para hacer las cajas más grandes */
+    margin-bottom: 15px; /* Espacio entre campos */
+	margin-right: 50%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 118%; /* Aumenta el tamaño de la fuente */
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo semi-transparente */
+}
+
+input[type="number"] {
+    width: 50%; /* Mantiene el ancho completo */
+    padding: 10px; /* Mantener un tamaño más pequeño */
+    margin-bottom: 15px; /* Espacio entre campos */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px; /* Tamaño de fuente normal para la edad */
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo semi-transparente */
+}
+
+input[type="submit"] {
+    background-color: #393939;
+    color: white;
+	width: 80%;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(-45deg, #b20000, #f60000,#f60059);
+    background-size: 400% 400%;
+    -webkit-animation: gradient 15s ease infinite;
+    animation: gradient 5s ease infinite;
+    overflow: hidden;
+}
+
+@-webkit-keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
