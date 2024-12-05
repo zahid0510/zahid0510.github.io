@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Conexion de base de datos</title>
+<link rel="icon" hreF="Imagenes/UNEVE.png">
+<link rel="stylesheet" href="Css/conexion.css">
+</head>
+
+<body>
+	<div id="contenedor">
+	</div>
+	<div id="contenedor2">
+		<nav>
+
+<table>
+    <tr>
+        <td colspan="4"><center><img src="Imagenes/UNEVE.png" id="logo"></center></td>
+    </tr>
+    <tr>
+        <td class="animacion"><a href="Menu.html">MENU</a></td>
+    </tr>
+</table>
+		</nav>
+		
+	<section id="accesibilidad">
+<h1>Conexión de una Base de Datos en la Web</h1>
+<p>La conexión de una base de datos con una aplicación web es esencial para el funcionamiento dinámico de muchos sitios. Este proceso permite almacenar, gestionar y recuperar datos de manera eficiente mediante la integración de lenguajes de programación como PHP, Python o JavaScript.</p>
+
+<h3>Pasos Básicos para Establecer una Conexión</h3>
+
+<h4>1. Preparación de la Base de Datos</h4>
+<ul>
+  <li>Crear y configurar una base de datos utilizando herramientas como MySQL, PostgreSQL o SQLite.</li>
+  <li>Establecer un usuario y contraseña seguros con permisos específicos.</li>
+</ul>
+
+<h4>2. Instalación de Controladores</h4>
+<p>Es necesario instalar controladores como <strong>MySQLi</strong> o <strong>PDO</strong> en PHP para facilitar la comunicación entre la aplicación web y el servidor de la base de datos.</p>
+
+<h4>3. Definición de Parámetros de Conexión</h4>
+<p>En el código fuente de la web, definir:</p>
+<ul>
+  <li><strong>Host:</strong> Por ejemplo, <code>localhost</code>.</li>
+  <li><strong>Nombre de usuario:</strong> Credenciales configuradas previamente.</li>
+  <li><strong>Contraseña:</strong> Clave segura para el usuario.</li>
+  <li><strong>Nombre de la base de datos:</strong> Nombre asignado al crear la base de datos.</li>
+</ul>
+
+<h4>4. Ejecución de Consultas SQL</h4>
+<p>Una vez establecida la conexión, se pueden realizar consultas SQL para interactuar con la base de datos, tales como:</p>
+<ul>
+  <li><strong>Insertar:</strong> Agregar nuevos registros.</li>
+  <li><strong>Actualizar:</strong> Modificar datos existentes.</li>
+  <li><strong>Consultar:</strong> Recuperar información.</li>
+</ul>
+
+<h4>5. Cerrar la Conexión</h4>
+<p>Es importante liberar los recursos cerrando la conexión después de completar las operaciones para optimizar el rendimiento del sistema.</p>
+
+<h3>Buenas Prácticas</h3>
+<ul>
+  <li>Validar y limpiar los datos ingresados por los usuarios para evitar inyecciones SQL.</li>
+  <li>Usar conexiones seguras (SSL) para proteger los datos durante su transmisión.</li>
+  <li>Optimizar consultas SQL para mejorar el rendimiento de la aplicación.</li>
+</ul>
+	<center><video width="640" height="360" autoplay controls >
+    <source src="videos/conexion.mp4" type="video/mp4">
+    Tu navegador no puede reproducir este video.
+    </video></center>
+		
+    </section>
+	</div>
+</body>
+</html>
